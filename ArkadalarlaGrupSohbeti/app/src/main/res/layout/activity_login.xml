@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_main_page"
+    tools:context=".LoginActivity">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Arkadaşlarla Grup Sohbeti"
+        android:textSize="40sp"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="@font/friend"
+        android:layout_above="@+id/bottom_layout"
+        android:layout_marginBottom="80dp">
+
+    </TextView>
+
+
+    <LinearLayout
+        android:id="@+id/bottom_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:backgroundTint="@color/white"
+        android:padding="40dp"
+        android:background="@drawable/transparent_background"
+        android:orientation="vertical">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Toplantı Oda Numarası"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:maxLength="10"
+                android:id="@+id/meeting_id_input"
+                android:textSize="18sp">
+
+            </com.google.android.material.textfield.TextInputEditText>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Kullanıcı Adı"
+            android:layout_marginTop="20dp"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/name_input"
+                android:textSize="18sp">
+
+            </com.google.android.material.textfield.TextInputEditText>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Toplantıya Katıl"
+            android:textAllCaps="false"
+            android:padding="12dp"
+            android:layout_marginTop="32dp"
+            android:id="@+id/join_btn"
+            android:textSize="16sp"
+            android:background="@drawable/rounded_corners">
+
+        </com.google.android.material.button.MaterialButton>
+
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Yeni Toplantı Oluştur"
+            android:textAllCaps="false"
+            android:padding="12dp"
+            android:layout_marginTop="16dp"
+            android:id="@+id/create_btn"
+            android:textSize="16sp"
+            android:background="@drawable/rounded_corners">
+
+        </com.google.android.material.button.MaterialButton>
+
+
+
+
+    </LinearLayout>
+</RelativeLayout>
